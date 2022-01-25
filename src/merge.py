@@ -21,9 +21,6 @@ def merge_data(games, teams):
 
 if __name__ == '__main__':
     teams = pd.read_csv('../dat/raw/teams.csv')
-    #rankings = pd.read_csv('../dat/ranking.csv')
-    #players = pd.read_csv('../dat/players.csv')
-    #games_details = pd.read_csv('../dat/games_details.csv')
     games = pd.read_csv('../dat/raw/games.csv')
     
     # start merging
