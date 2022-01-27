@@ -18,6 +18,9 @@ All teams are assigned an initial score of 1500, which is the convention of what
 
 <img src="https://latex.codecogs.com/svg.image?&space;E_{A}&space;=&space;&space;\frac{1}{\&space;1&space;&plus;&space;10&space;^&space;\frac{(R_{A}&space;-&space;R_{B})}{400}&space;" title=" E_{A} = \frac{1}{\ 1 + 10 ^ \frac{(R_{A} - R_{B})}{400} " />
 
+Where :
+* <img src="https://latex.codecogs.com/svg.image?&space;R_{A}" title=" R_{A}" /> = The home team current rating
+
 Ratings are then adjusted by 
 
 <img src="https://latex.codecogs.com/svg.image?&space;R'&space;_{A}&space;=&space;&space;R_{A}&space;&plus;&space;K&space;(S_{A}&space;-&space;E_{A})" title=" R' _{A} = R_{A} + K (S_{A} - E_{A})" />
