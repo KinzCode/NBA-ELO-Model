@@ -44,7 +44,7 @@ The data used in this repository was kindly provided by https://www.kaggle.com/n
 
 ## Use
 1. Clone this repository
-2. Execute mergy.py
+2. Execute merge.py
 3. Execute clean.py
 4. Execute elo.py
 5. View elo_preds.csv in dat/clean
