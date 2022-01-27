@@ -34,6 +34,19 @@ def delete_missing(mapped_games):
     return mapped_games
 
 def clean_data(mapped_games):
+    """
+    Parameters
+    ----------
+    mapped_games : DF
+        Base DF where each row represnts 1 NBA game. DF contains teams, scores,
+        dates etc.
+
+    Returns
+    -------
+    mapped_games : DF
+        The cleaned DF only containing the data needed for the ELO model.
+
+    """
     mapped_games = drop_columns(mapped_games)
     mapped_games = rename_columns(mapped_games)
     mapped_games = delete_missing(mapped_games)
