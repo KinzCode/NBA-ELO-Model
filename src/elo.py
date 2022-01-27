@@ -7,7 +7,6 @@ Created on Tue Jan 25 15:16:42 2022
 
 import numpy as np
 import pandas as pd
-import json
 
 
 class ELO(object):
@@ -18,7 +17,6 @@ class ELO(object):
         self.preds = []
 
     def calculate_pred(self, elo1, elo2):
-        #2.71828 - alternate base
         elo_difference = (elo2 - elo1) / 400
         pred = 1 / (1 + (10 ** elo_difference))
         return pred
