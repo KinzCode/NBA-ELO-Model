@@ -40,6 +40,7 @@ class ELO(object):
         
         
 if __name__ == '__main__':
+    # read in clean df
     df = pd.read_csv('../dat/clean/cleaned_games.csv')
     
     # create list of all teams
