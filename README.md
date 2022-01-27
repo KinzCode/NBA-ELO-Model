@@ -28,7 +28,7 @@ Ratings are then adjusted by
 
 Where :
 * <img src="https://latex.codecogs.com/svg.image?&space;R_{A}" title=" R_{A}" /> = The home team's current rating.
-* <img src="https://latex.codecogs.com/svg.image?&space;K}" title=" K}" /> = The rate to which elo ratings change to new game results. This value is interchangable and can be changed in elo.py but has been set as 10 as a default. Making this value to large means the ratings will jump around to much where as making it to small will mean the elo will take to long to account for important changes.
+* <img src="https://latex.codecogs.com/svg.image?&space;{K}" title="K}" /> = The rate to which elo ratings change to new game results. This value is interchangable and can be changed in elo.py but has been set as 10 as a default. Making this value to large means the ratings will jump around to much where as making it to small will mean the elo will take to long to account for important changes.
 * <img src="https://latex.codecogs.com/svg.image?&space;S_{A}" title=" S_{A}" /> = The match result. Will either be 1 representing win or 0 representing a loss.
 * <img src="https://latex.codecogs.com/svg.image?&space;E_{A}" title=" E_{A}" /> = The pre game prediction.
 
