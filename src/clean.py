@@ -30,6 +30,16 @@ def order_data(mapped_games):
     return mapped_games
 
 def delete_missing(mapped_games):
+    """
+    Parameters
+    ----------
+    mapped_games : DF
+
+    Returns
+    -------
+    mapped_games : DF
+        Returns DF with no missing values. Any row with NAN is dropped.
+    """
     mapped_games.dropna(inplace = True)
     return mapped_games
 
@@ -45,7 +55,6 @@ def clean_data(mapped_games):
     -------
     mapped_games : DF
         The cleaned DF only containing the data needed for the ELO model.
-
     """
     mapped_games = drop_columns(mapped_games)
     mapped_games = rename_columns(mapped_games)
