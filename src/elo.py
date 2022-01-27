@@ -11,7 +11,7 @@ import pandas as pd
 
 class ELO(object):
     def __init__(self, original_fighters):
-        self.elo = {i: 1600 for i in original_fighters}
+        self.elo = {i: 1500 for i in original_fighters}
         self.elo1_vals = []
         self.elo2_vals = []
         self.preds = []
