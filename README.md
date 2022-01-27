@@ -14,7 +14,7 @@ This repository holds the codebase for an ELO model applied to the National Bask
 
 ELO is calculated by 
 
-[img]http://www.sciweavers.org/tex2img.php?eq=%20E_%7BA%7D%20%3D%20%20%5Cfrac%7B1%7D%7B%5C%201%20%2B%2010%20%5E%20%5Cfrac%7B%28R_%7BA%7D%20-%20R_%7BB%7D%29%7D%7B400%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0[/img]
+![img]http://www.sciweavers.org/tex2img.php?eq=%20E_%7BA%7D%20%3D%20%20%5Cfrac%7B1%7D%7B%5C%201%20%2B%2010%20%5E%20%5Cfrac%7B%28R_%7BA%7D%20-%20R_%7BB%7D%29%7D%7B400%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0[/img]
 
 ## **Technologies**
 Project is created with:
