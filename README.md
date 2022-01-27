@@ -19,11 +19,18 @@ All teams are assigned an initial score of 1500, which is the convention of what
 <img src="https://latex.codecogs.com/svg.image?&space;E_{A}&space;=&space;&space;\frac{1}{\&space;1&space;&plus;&space;10&space;^&space;\frac{(R_{A}&space;-&space;R_{B})}{400}&space;" title=" E_{A} = \frac{1}{\ 1 + 10 ^ \frac{(R_{A} - R_{B})}{400} " />
 
 Where :
-* <img src="https://latex.codecogs.com/svg.image?&space;R_{A}" title=" R_{A}" /> = The home team current rating
+* <img src="https://latex.codecogs.com/svg.image?&space;R_{A}" title=" R_{A}" /> = The home team's current rating.
+* <img src="https://latex.codecogs.com/svg.image?&space;R_{B}" title=" R_{B}" /> = The away team's current rating.
 
 Ratings are then adjusted by 
 
 <img src="https://latex.codecogs.com/svg.image?&space;R'&space;_{A}&space;=&space;&space;R_{A}&space;&plus;&space;K&space;(S_{A}&space;-&space;E_{A})" title=" R' _{A} = R_{A} + K (S_{A} - E_{A})" />
+
+Where :
+* <img src="https://latex.codecogs.com/svg.image?&space;R_{A}" title=" R_{A}" /> = The home team's current rating.
+* <img src="https://latex.codecogs.com/svg.image?&space;K}" title=" K}" /> = The rate to which elo ratings change to new game results. This value is interchangable and can be changed in elo.py but has been set as 10 as a default. Making this value to large means the ratings will jump around to much where as making it to small will mean the elo will take to long to account for important changes.
+* <img src="https://latex.codecogs.com/svg.image?&space;S_{A}" title=" S_{A}" /> = The match result. Will either be 1 representing win or 0 representing a loss.
+* <img src="https://latex.codecogs.com/svg.image?&space;E_{A}" title=" E_{A}" /> = The pre game prediction.
 
 ## **Technologies**
 Project is created with:
@@ -35,11 +42,11 @@ Project is created with:
 The data used in this repository was kindly provided by https://www.kaggle.com/nathanlauga/nba-games
 
 ## Use
-1: Clone this repository
-2: Execute mergy.py
-3: Execute clean.py
-4: Execute elo.py
-5: View elo_preds.csv in dat/clean
+1. Clone this repository
+2. Execute mergy.py
+3. Execute clean.py
+4. Execute elo.py
+5. View elo_preds.csv in dat/clean
 
 ## Structure
     ├── dat   		<- Folder containing raw and clean folders.
