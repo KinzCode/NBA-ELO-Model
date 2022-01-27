@@ -9,12 +9,34 @@ import pandas as pd
 
 
 def drop_columns(mapped_games):
+    """
+    Parameters
+    ----------
+    mapped_games : DF.
+
+    Returns
+    -------
+    mapped_games : DF
+        Removes unwanted/ unneeded columns for model.
+
+    """
     keeps = ['GAME_DATE_EST', 'HOME_TEAM_ID','VISITOR_TEAM_ID',
              'PTS_home', 'PTS_away', 'HOME_TEAM_WINS', 'SEASON']
     mapped_games = mapped_games[keeps]
     return mapped_games
 
 def rename_columns(mapped_games):
+    """
+    Parameters
+    ----------
+    mapped_games : DF.
+
+    Returns
+    -------
+    mapped_games : DF
+        Renames columns in DF to cleaner spelling and more intuitive names.
+
+    """
     mapped_games.rename(columns = {'GAME_DATE_EST': 'Date',
                                    'HOME_TEAM_ID':'Home_Team',
                                    'VISITOR_TEAM_ID': 'Away_Team',
