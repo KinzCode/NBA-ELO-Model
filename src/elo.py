@@ -26,7 +26,8 @@ class ELO(object):
         Note the away team can just be calculated by 1 - home team pred.
     """
     def __init__(self, original_fighters):
-        self.elo = {i: 1600 for i in original_fighters}
+
+        self.elo = {i: 1500 for i in original_fighters}
         self.home_vals = []
         self.away_vals = []
         self.preds = []
