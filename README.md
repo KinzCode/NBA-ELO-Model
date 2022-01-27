@@ -58,5 +58,6 @@ The data used in this repository was kindly provided by https://www.kaggle.com/n
         ├── merge.py   <- The script that merges the appropriate csv files.
         ├── clean.py 	 <- The script that cleans the df in prepartion for ELO by removing unneccesary rows, handling missing data etc.
         ├── elo.py  		 <- The script that holds the ELO logic and creates the predictions.
+    ├── .gitignore.txt <- The file containing what files to ignore.
     └── README.md      <- The file providing an overview of the repository and codebase.
 
