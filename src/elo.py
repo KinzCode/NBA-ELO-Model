@@ -48,8 +48,7 @@ class ELO(object):
             represents the home team has a predicted 65% chance to win.
 
         """
-        elo_difference = (elo2 - elo1) / 400
-        pred = 1 / (1 + (10 ** elo_difference))
+        pred = 1 / (1 + (10 ** ((elo2 - elo1) / 400)))
         return pred
         
     def run_elo(self, row, k):
