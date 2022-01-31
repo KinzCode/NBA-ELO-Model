@@ -25,9 +25,9 @@ class ELO(object):
         A list containing all the calculated predictions for the home teams.
         Note the away team can just be calculated by 1 - home team pred.
     """
-    def __init__(self, original_fighters):
+    def __init__(self, original_teams):
 
-        self.elo = {i: 1500 for i in original_fighters}
+        self.elo = {i: 1500 for i in original_teams}
         self.home_vals = []
         self.away_vals = []
         self.preds = []
