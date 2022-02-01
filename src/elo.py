@@ -51,6 +51,7 @@ class ELO(object):
         pred = 1 / (1 + (10 ** ((elo2 - elo1) / 400)))
         return pred
         
+    
     def run_elo(self, row, k):
         """
         Parameters
@@ -93,9 +94,9 @@ if __name__ == '__main__':
     # apply elo logic to df
     df.apply(e.run_elo, k = 10, axis=1)
     # add preds and elo values to df
-    df['eloPred'] = e.preds
-    df['elo1'] = e.home_vals
-    df['elo2'] = e.away_vals
+    df['HomePred'] = e.preds
+    df['Home_Elo'] = e.home_vals
+    df['Away_Elo'] = e.away_vals
     # get team rankings
     team_rankings = e.elo
     # save df with predictions to csv
